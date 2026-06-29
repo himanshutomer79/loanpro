@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>LoanPro</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+
+<header>
+
+<div class="logo">
+💰 Loan<span>Pro</span>
+</div>
+
+
+<nav>
+<a href="#home">Home</a>
+<a href="#loan">Loans</a>
+<a href="#about">About</a>
+<a href="#eligibility">Eligibility</a>
+<a href="#contact">Contact</a>
+</nav>
+
+
+<button onclick="openForm()">Apply Now</button>
+
+</header>
+
+
+
+
+
+<section class="hero" id="home">
+
+
+<div class="hero-text">
+
+
+<h1>
+Get Your Loan
+<br>
+<span>Fast & Easy</span>
+</h1>
+
+
+<h2>
+Loan With MANISH TOMAR
+</h2>
+
+
+<p>
+Personal, Home, Car and Business Loans
+with simple process and low interest rates.
+</p>
+
+
+
+<div class="btns">
+
+<button onclick="openForm()">
+Apply Loan
+</button>
+
+
+<button class="second" onclick="learnMore()">
+Learn More
+</button>
+
+</div>
+
+
+
+<div class="stats">
+
+<div>
+<h2>10K+</h2>
+<p>Customers</p>
+</div>
+
+
+<div>
+<h2>98%</h2>
+<p>Approval</p>
+</div>
+
+
+<div>
+<h2>24/7</h2>
+<p>Support</p>
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+<div class="hero-img">
+
+<img src="img (2).jpg">
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<section class="loan-section" id="loan">
+
+
+<h1>Our Loan Services</h1>
+
+
+<div class="loan-container">
+
+
+<div class="loan-card">
+<i class="fa-solid fa-house"></i>
+<h2>Home Loan</h2>
+<p>Easy EMI and quick approval.</p>
+</div>
+
+
+
+<div class="loan-card">
+<i class="fa-solid fa-car"></i>
+<h2>Car Loan</h2>
+<p>Buy your dream car.</p>
+</div>
+
+
+
+<div class="loan-card">
+<i class="fa-solid fa-briefcase"></i>
+<h2>Business Loan</h2>
+<p>Grow your business.</p>
+</div>
+
+
+
+
+<div class="loan-card">
+<i class="fa-solid fa-user-doctor"></i>
+<h2>Doctor Loan</h2>
+<p>Special doctor finance.</p>
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<section class="about" id="about">
+
+
+<h1>
+Why Choose LoanPro?
+</h1>
+
+
+<div class="about-box">
+
+
+<div>
+<i class="fa-solid fa-bolt"></i>
+<h2>Fast Approval</h2>
+<p>Get loan approval quickly.</p>
+</div>
+
+
+
+<div>
+<i class="fa-solid fa-shield"></i>
+<h2>Secure</h2>
+<p>100% safe process.</p>
+</div>
+
+
+
+<div>
+<i class="fa-solid fa-percent"></i>
+<h2>Low Interest</h2>
+<p>Affordable EMI plans.</p>
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<section class="eligibility" id="eligibility">
+
+
+<h1>
+Check Eligibility
+</h1>
+
+
+<div class="eligibility-box">
+
+
+<div class="elig-card">
+
+<h2>👔 Salaried</h2>
+
+<ul>
+<li>Age 21-60</li>
+<li>2 Year Experience</li>
+<li>Income ₹3 Lakh/year</li>
+</ul>
+
+</div>
+
+
+
+<div class="elig-card">
+
+<h2>💼 Business</h2>
+
+<ul>
+<li>Age 21-65</li>
+<li>Business 2 Year</li>
+<li>Income ₹3 Lakh/year</li>
+</ul>
+
+</div>
+
+
+
+<img src="img - Copy.jpg">
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<section class="documents">
+
+
+<h1>
+Documents Required
+</h1>
+
+
+<div class="doc-container">
+
+
+<div>
+<i class="fa-solid fa-id-card"></i>
+<h2>ID Proof</h2>
+<p>Aadhar<br>Passport</p>
+</div>
+
+
+<div>
+<i class="fa-solid fa-location-dot"></i>
+<h2>Address</h2>
+<p>Bill<br>Voter ID</p>
+</div>
+
+
+
+<div>
+<i class="fa-solid fa-money-bill"></i>
+<h2>Income</h2>
+<p>Salary Slip<br>Bank Statement</p>
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- FORM -->
+
+
+<div class="popup" id="popup">
+
+
+<form onsubmit="submitForm(event)">
+
+
+<i class="fa-solid fa-xmark close"
+onclick="closeForm()"></i>
+
+
+<h1>Apply Loan</h1>
+
+
+<input required placeholder="Full Name">
+
+
+<input required placeholder="Mobile Number">
+
+
+<select required>
+
+<option>Select Loan</option>
+
+<option>Home Loan</option>
+<option>Car Loan</option>
+<option>Business Loan</option>
+
+</select>
+
+
+<input required placeholder="Loan Amount">
+
+
+<textarea placeholder="Message"></textarea>
+
+
+<button>
+Submit Application
+</button>
+
+
+</form>
+
+
+</div>
+
+
+
+
+
+
+<footer id="contact">
+
+
+<h2>
+LoanPro
+</h2>
+
+
+<p>
+📍 Ghaziabad
+</p>
+
+
+<p>
+📞 +91 9871812106
+</p>
+
+
+<p>
+✉ aaradhya720@gmail.com
+</p>
+
+
+<p>
+© 2026 LoanPro All Rights Reserved
+</p>
+
+
+</footer>
+
+
+
+
+
+
+<script>
+
+
+function openForm(){
+
+document.getElementById("popup").style.display="flex";
+
+}
+
+
+
+function closeForm(){
+
+document.getElementById("popup").style.display="none";
+
+}
+
+
+
+function learnMore(){
+
+document.getElementById("about").scrollIntoView({
+behavior:"smooth"
+});
+
+}
+
+
+
+
+function submitForm(e){
+
+e.preventDefault();
+
+alert("Your Loan Application Submitted Successfully!");
+
+closeForm();
+
+}
+
+
+</script>
+
+
+
+</body>
+</html>
